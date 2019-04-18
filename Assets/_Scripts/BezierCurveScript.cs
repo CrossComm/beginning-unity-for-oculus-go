@@ -96,6 +96,7 @@ public class BezierCurveScript : MonoBehaviour
     {
         UpdatePath();
         lineRenderer.SetPositions(path.pathPoints.ToArray());
+        lineRenderer.positionCount = path.pathPoints.Count;
     }
 
     public void SetCurveTarget(GameObject _target)
